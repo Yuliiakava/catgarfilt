@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -60,8 +60,6 @@
             to {
                 transform: translate(-50px, -50px);
             }
-    </style>
-</head>
 <body>
     <div id="cat" class="emoji">🐈‍⬛</div>
     <div id="hearts" class="emoji">🤍🤍</div>
@@ -147,25 +145,6 @@
             "Сподіваюсь що скоро зможу сказати то все дивлячись на тебе) Обнімаю, люблю, скучаю🤍🤗",
             "Продовження буде зовсім скоро 🤍🤍🤍"
         ];
-
-        let index = 0;
-
-        document.addEventListener('click', () => {
-            index = (index + 1) % texts.length;
-            document.getElementById('text').innerHTML = texts[index];
-        });
-    </script>
 </body>
 </html>
-
-        ];
-
-        let index = 0;
-
-        document.body.addEventListener('click', () => {
-            index = (index + 1) % texts.length;
-            document.getElementById('text').textContent = texts[index];
-        });
-    </script>
-</body>
-</html>
+        

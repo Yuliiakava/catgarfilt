@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Градієнтний фон</title>
+    <title>Special Project</title>
     <style>
         body {
-            height: 100vh;
+            font-family: Arial, sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to bottom, #001f3f, #b03060); /* Темно-синій до темно-червоного */
-            color: white;
-            font-size: 2em;
-            text-align: center;
-            transition: background 0.5s;
-        }
-          <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji Animation</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
+            padding: 0;
             background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .text-block {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
         }
 
         .emoji {
@@ -60,14 +60,14 @@
             to {
                 transform: translate(-50px, -50px);
             }
+        }
     </style>
 </head>
 <body>
+
+    <!-- Кіт та серця рухаються по діагоналі -->
     <div id="cat" class="emoji">🐈‍⬛</div>
     <div id="hearts" class="emoji">🤍🤍</div>
-    </style>
-</head>
-<body>
     <div id="text">Просто натискай на екран 🤍</div>
 
     <script>

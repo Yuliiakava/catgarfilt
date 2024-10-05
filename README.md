@@ -17,6 +17,54 @@
             text-align: center;
             transition: background 0.5s;
         }
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 48px;
+        }
+
+        #cat {
+            top: 10%;
+            left: 10%;
+            animation: moveCat 3s infinite alternate ease-in-out;
+        }
+
+        #hearts {
+            bottom: 10%;
+            right: 10%;
+            animation: moveHearts 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveCat {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(50px, 50px);
+            }
+        }
+
+        @keyframes moveHearts {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(-50px, -50px);
+            }
+    </style>
+</head>
+<body>
+    <div id="cat" class="emoji">🐈‍⬛</div>
+    <div id="hearts" class="emoji">🤍🤍</div>
     </style>
 </head>
 <body>

@@ -42,6 +42,7 @@
             bottom: 20%; /* Розміщуємо серце в нижній частині */
             left: 50%;
             transform: translateX(-50%); /* Центруємо серце */
+            animation: fadeIn 1s; /* Додаємо анімацію для серця */
         }
 
         @keyframes moveCat {
@@ -59,6 +60,15 @@
             }
             to {
                 transform: translate(-50px, -50px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
             }
         }
     </style>
@@ -168,7 +178,7 @@
                     "З теплими почуттями, Покахонтас🤍 ",
         ];
 
-        let index = 0;
+         let index = 0;
         const textElement = document.getElementById('text');
         const heartElement = document.getElementById('heart'); // Отримуємо серце
 

@@ -58,8 +58,8 @@
     <div id="text">Просто натискай на екран 🤍</div>
 
     <!-- Кіт та серця -->
-    <div id="cat" class="emoji">🐈‍⬛</div>
-    <div id="hearts" class="emoji">🤍🤍</div>
+    <div id="cat" class="emoji">🐈‍⬛🤍🐈‍⬛</div>
+    <div id="hearts" class="emoji">🤍🐈‍⬛🤍</div>
 
     <script>
         const texts = [

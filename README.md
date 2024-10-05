@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -17,13 +16,17 @@
             text-align: center;
             transition: background 0.5s;
         }
+  #message {
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
-    <div id="text">Просто натискай на екран 🤍</div>
+    <div id="message">Просто натискай на екран 🤍</div>
 
     <script>
-        const texts = [
+        const messages = [
+
             "Хелоу котусик🐈‍⬛ Думаю ти здогадуєшся що це і як працює, але про всяк випадок напишу)  Подумки обійняла 🤗",
             "Давай напевно почну з самого початку як я взагалі почала думати про те щоб зробити щось подібне тобі. То було не так давно, на день народження Тьоми.",
             "Ми з тобою розмовляли після того як ти побачив саме привітання, і обмолвився, що ти такого не отримував. От тоді я і подумала а чому б і ні.",
@@ -100,23 +103,13 @@
             "Продовження буде зовсім скоро 🤍🤍🤍"
         ];
 
-        let index = 0;
-
-        document.addEventListener('click', () => {
-            index = (index + 1) % texts.length;
-            document.getElementById('text').innerHTML = texts[index];
-        });
-    </script>
-</body>
-</html>
-
-        ];
-
-        let index = 0;
-
-        document.body.addEventListener('click', () => {
-            index = (index + 1) % texts.length;
-            document.getElementById('text').textContent = texts[index];
+       
+  let index = 0;
+        document.body.addEventListener('click', function() {
+            if (index < messages.length) {
+                document.getElementById('message').innerText = messages[index];
+                index++;
+            }
         });
     </script>
 </body>

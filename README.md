@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="uk"><head>
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Градієнтний фон з анімацією</title>
@@ -10,12 +11,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom, #001f3f, #b03060); /* Темно-синій до темно-червоного */
+            background: linear-gradient(to bottom, #001f3f, #b03060);
             color: white;
             font-size: 2em;
             text-align: center;
             transition: background 0.5s;
-            overflow: hidden; /* Забезпечує, що анімації не виходять за межі */
+            overflow: hidden;
         }
 
         .emoji {
@@ -36,12 +37,12 @@
         }
 
         #heart {
-            display: none; /* Ховаємо серце спочатку */
+            display: none;
             font-size: 48px;
             position: absolute;
-            bottom: 20%; /* Розміщуємо серце в нижній частині */
+            bottom: 20%;
             left: 50%;
-            transform: translateX(-50%); /* Центруємо серце */
+            transform: translateX(-50%);
         }
 
         @keyframes moveCat {
@@ -66,10 +67,9 @@
 <body>
     <div id="text">Просто натискай на екран 🤍</div>
 
-    <!-- Кіт та серця -->
     <div id="cat" class="emoji">🐈‍⬛🤍🐈‍⬛🤍🐈‍⬛🤍</div>
     <div id="hearts" class="emoji">🤍🐈‍⬛🤍🐈‍⬛🤍🐈‍⬛</div>
-    <div id="heart" class="emoji">❤️</div> <!-- Додаємо червоне серце -->
+    <div id="heart" class="emoji">❤️</div>
 
     <script>
         const texts = [
@@ -170,7 +170,7 @@
 
         let index = 0;
         const textElement = document.getElementById('text');
-        const heartElement = document.getElementById('heart'); // Отримуємо серце
+        const heartElement = document.getElementById('heart');
 
         document.addEventListener('click', () => {
             if (index < texts.length) {
@@ -179,6 +179,7 @@
             } else {
                 textElement.innerText = ""; // Сховати текст
                 heartElement.style.display = 'block'; // Показати серце
+                index = 0; // Скидаємо index для повторного перегляду
             }
         });
     </script>
